@@ -68,8 +68,14 @@ function update() {
         gameOver = true;
         alert("Fuck you. You suck.");
         setTimeout(function() {
-            window.location = "https://youtu.be/dQw4w9WgXcQ?si=Y1mQmuErCzrmFKte";
-          }, 1);;
+            document.addEventListener("keydown", function(event) {
+                if (event.keyCode === 69) { // 69 is the keycode for the "e" key
+                    event.stopPropagation();
+                } else {
+                    window.location = "https://youtu.be/dQw4w9WgXcQ?si=Y1mQmuErCzrmFKte";
+                }
+            });
+        }, 1); // waits for 1 second before executing window.location
     }
 
     for (let i = 0; i < snakeBody.length; i++) {
@@ -77,8 +83,14 @@ function update() {
             gameOver = true;
             alert("Fuck you. You suck.");
         setTimeout(function() {
-            window.location = "https://youtu.be/dQw4w9WgXcQ?si=Y1mQmuErCzrmFKte";
-          }, 1);
+            document.addEventListener("keydown", function(event) {
+                if (event.keyCode === 69) { // 69 is the keycode for the "e" key
+                    event.stopPropagation();
+                } else {
+                    window.location = "https://youtu.be/dQw4w9WgXcQ?si=Y1mQmuErCzrmFKte";
+                }
+            });
+        }, 1); // waits for 1 second before executing window.location
         }
     }
 }
