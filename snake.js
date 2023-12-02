@@ -67,12 +67,14 @@ function update() {
     if (snakeX < 0 || snakeX > cols*blockSize || snakeY < 0 || snakeY > rows*blockSize) {
         gameOver = true;
         window.location = "https://youtu.be/dQw4w9WgXcQ?si=Y1mQmuErCzrmFKte";
+        alert("Fuck you. You suck.");
     }
 
     for (let i = 0; i < snakeBody.length; i++) {
         if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
             gameOver = true;
             window.location = "https://youtu.be/dQw4w9WgXcQ?si=Y1mQmuErCzrmFKte";
+            alert("Fuck you. You suck.");
         }
     }
 }
