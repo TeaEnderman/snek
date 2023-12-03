@@ -70,7 +70,7 @@ function update() {
         setTimeout(function() {
             window.location = "https://youtu.be/dQw4w9WgXcQ?si=Y1mQmuErCzrmFKte";
           }, 1); // waits for 1 second before executing window.location
-}
+
        
     }
 
@@ -83,6 +83,7 @@ function update() {
               }, 1); // waits for 1 second before executing window.location
         }
     }
+}
 
 
 function changeDirection(e) {
